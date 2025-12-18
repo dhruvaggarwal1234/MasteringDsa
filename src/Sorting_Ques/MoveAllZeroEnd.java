@@ -9,6 +9,8 @@ package Sorting_Ques;
 
 public class MoveAllZeroEnd {
 
+
+    //Optimal Approach
     static int[] moveZeroPointer(int[] arr){
         int j = 0 ;
 
@@ -25,6 +27,8 @@ public class MoveAllZeroEnd {
 
     }
 
+
+    //UnderStanding BubbleSort Meaning
     static int [] moveZeroBubble(int[] arr){
 
         int n  = arr.length-1;
