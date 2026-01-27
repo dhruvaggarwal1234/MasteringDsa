@@ -13,6 +13,7 @@ public class Adding_one_in_ArrayList {
         arr.add(7);
         arr.add(8);
 
+
 //        for(int a : arr){
 //            System.out.print(a+" ");
 //        }
