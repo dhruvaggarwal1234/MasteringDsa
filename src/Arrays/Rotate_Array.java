@@ -1,5 +1,46 @@
 package Arrays;
 
+/*
+------------------------------------------------
+Problem: Rotate Array
+------------------------------------------------
+Rotate an array of size n by k positions (left/right)
+using an in-place approach.
+
+Technique:
+- Array Reversal Technique (Two Pointer)
+
+Idea:
+Right Rotation:
+1. k = k % n
+2. Reverse entire array
+3. Reverse first k elements
+4. Reverse remaining n-k elements
+
+Left Rotation:
+1. k = k % n
+2. Reverse first k elements
+3. Reverse remaining n-k elements
+4. Reverse entire array
+
+Common Mistakes:
+- Forgetting k = k % n
+- Mixing left and right rotation logic
+- Wrong reverse index ranges
+- Using extra array unnecessarily
+
+Time Complexity:
+- O(n)
+
+Space Complexity:
+- O(1)
+
+Interview Line:
+"I rotate the array in place using the array reversal technique."
+------------------------------------------------
+*/
+
+
 import java.util.Scanner;
 
 public class Rotate_Array {
