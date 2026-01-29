@@ -1,5 +1,69 @@
-package Arrays;// Array Must be Sorted manger of the given array
-// 3 pointer techiques
+package Arrays;
+
+/*
+====================================================
+TOPIC: Merge Two Sorted Arrays (3 Pointer Technique)
+====================================================
+
+PROBLEM:
+Given two sorted arrays, merge them into a single
+sorted array.
+
+Example:
+arr1 = [1, 3, 5, 6]
+arr2 = [2, 4, 6]
+
+Output:
+[1, 2, 3, 4, 5, 6, 6]
+
+IMPORTANT NOTE:
+- Both input arrays must be sorted
+- Result array size = arr1.length + arr2.length
+
+APPROACH:
+Three Pointer Technique (Backward Merge)
+
+Pointers Used:
+i → last index of arr1
+j → last index of arr2
+k → last index of result array
+
+WHY BACKWARD MERGE?
+- Avoids extra shifting
+- Efficient placement of largest elements first
+
+LOGIC:
+1. Initialize:
+   i = arr1.length - 1
+   j = arr2.length - 1
+   k = result.length - 1
+
+2. While (i >= 0 && j >= 0):
+   - Compare arr1[i] and arr2[j]
+   - Place the larger element at result[k]
+   - Decrement corresponding pointer
+
+3. Copy remaining elements (if any):
+   - If arr1 has elements left → copy them
+   - If arr2 has elements left → copy them
+
+TIME COMPLEXITY:
+O(m + n)
+
+SPACE COMPLEXITY:
+O(m + n)
+
+WHY OPTIMAL:
+✔ Single traversal
+✔ Sorted order maintained
+✔ Clean and efficient
+
+INTERVIEW NOTES:
+- Uses 3 pointer technique
+- Very common in merge sort
+- Can be modified for in-place merge
+====================================================
+*/
 
 
 
